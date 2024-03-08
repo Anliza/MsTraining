@@ -24,4 +24,8 @@ Ext.define('MsTraining.Application', {
             }
         );
     }
-});
+},
+function () {
+    console.log("On th callback");
+  }
+);

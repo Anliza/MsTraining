@@ -92,3 +92,12 @@ Such overrides, while automatically required, will only be included if their tar
 class ("Ext.foo.Bar" in this case) is also required. This simplifies applying
 patches or extensions to other classes.
 
+
+## Setting up classic ExtJS
+Documentation to follow https://docs.sencha.com/
+
+The generate aplication command for sencha is:- sencha generate app --ext classic MsTraining ./MsTraining
+It is good practice to make the folder name similar to the file name
+The command creates the initial application. Connect the folder to git repo.
+
+className => <AppName>.<foldername>.<ClassAndFileName>
