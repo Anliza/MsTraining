@@ -14,5 +14,10 @@ Ext.define('MyApp.view.todos.TodoGridViewController',{
       Ext.create({
             xtype: "formfieldsdemo",
         });
+    }, 
+    onLayoutsClicked:function(btn,e,eOpts){
+      Ext.create({
+          xtype: "accordionlayout",
+        });
     }
 })

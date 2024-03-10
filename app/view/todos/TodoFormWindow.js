@@ -14,6 +14,7 @@ Ext.define('MsTraining.view.todos.TodoFormWindow', {
        jsonSubmit:true,
        bodyPadding: 10,
        modelValidation: true,
+       layout: 'form',
        items:[
            {
                allowBlank: false,

@@ -14,5 +14,10 @@ Ext.define('MsTraining.view.posts.AlbumGridViewController',{
       Ext.create({
             xtype: "formfieldsdemo",
         });
+    }, 
+    onLayoutsClicked:function(btn,e,eOpts){
+      Ext.create({
+          xtype: "columnlayout", //"hboxvboxlayout",
+        });
     }
 })
