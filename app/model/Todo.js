@@ -6,9 +6,11 @@ Ext.define('MsTraining.model.Todo',{
     ],
     proxy: {
         type: 'rest', // type of call
-        url: 'https://jsonplaceholder.typicode.com/todos',
+        url: 'http://localhost:3000/todos',
         reader: {
             type: 'json',
+            rootProperty: 'rows',
+            totalProperty: 'totalCount'
         }
     }
    

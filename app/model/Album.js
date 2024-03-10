@@ -6,9 +6,11 @@ Ext.define('MsTraining.model.Album',{
     ],
     proxy: {
         type: 'rest', // type of call
-        url: 'https://jsonplaceholder.typicode.com/albums',
+        url: 'http://localhost:3000/albums',
         reader: {
             type: 'json',
+            rootProperty: 'rows',
+            totalProperty: 'totalCount'
         }
     }
    

@@ -19,7 +19,7 @@ Ext.define('MsTraining.view.albums.AlbumFormController', {
             //send ajax request to submit
             form.submit({
                 method:'POST',
-                url:'https://jsonplaceholder.typicode.com/albums',
+                url:'http://localhost:3000/albums',
                 success:function(form,action){
                     Ext.Msg.alert('Success', action.result.msg);
                     // add the record tpo the post store -> post grid

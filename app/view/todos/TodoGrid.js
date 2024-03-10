@@ -38,5 +38,5 @@ Ext.define('MsTraining.view.todos.TodoGrid',{
         displayInfo: true
     },
     scrollable: true,
-    height: 400
+    height: 600
 })
