@@ -9,6 +9,11 @@ Ext.define('MsTraining.view.todos.TodoFormWindow', {
     modal: true,
     items:[{
        xtype: 'form',
+       reference: 'postform',
+       itemId:'postform',
+       jsonSubmit:true,
+       bodyPadding: 10,
+       modelValidation: true,
        items:[
            {
                allowBlank: false,

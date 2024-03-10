@@ -10,6 +10,12 @@ Ext.define('MsTraining.view.albums.AlbumGrid',{
         listeners:{
             click: 'onAddAlbumClicked'
         }
+    },
+    {
+        text: 'Form fields',
+        listeners: {
+            click: 'onFormFieldsClicked'
+        }
     }],
     columns: [
         { dataIndex: '_id', text: 'ID' },

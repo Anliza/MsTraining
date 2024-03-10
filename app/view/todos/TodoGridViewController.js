@@ -9,5 +9,10 @@ Ext.define('MyApp.view.todos.TodoGridViewController',{
             xtype: "todoformwindow",
         });
         wd.show();
+    }, 
+    onFormFieldsClicked:function(btn,e,eOpts){
+      Ext.create({
+            xtype: "formfieldsdemo",
+        });
     }
 })

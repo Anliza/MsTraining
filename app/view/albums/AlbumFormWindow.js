@@ -14,6 +14,7 @@ Ext.define('MsTraining.view.albums.AlbumFormWindow', {
         itemId:'albumform',
         jsonSubmit:true,
         bodyPadding: 10,
+        modelValidation: true,
         items: [
             {
             allowBlank: true,

@@ -9,5 +9,10 @@ Ext.define('MsTraining.view.posts.AlbumGridViewController',{
             xtype: "albumformwindow",
         });
         wd.show();
+    }, 
+    onFormFieldsClicked:function(btn,e,eOpts){
+      Ext.create({
+            xtype: "formfieldsdemo",
+        });
     }
 })

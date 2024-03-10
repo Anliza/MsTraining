@@ -10,6 +10,12 @@ Ext.define('MsTraining.view.todos.TodoGrid',{
         listeners:{
             click: 'onAddTodoClicked'
         }
+    },
+    {
+        text: 'Form fields',
+        listeners: {
+            click: 'onFormFieldsClicked'
+        }
     }],
     columns: [
         { dataIndex: '_id', text: 'ID' },
