@@ -9,8 +9,6 @@ Ext.define('MsTraining.view.main.List', {
         'MsTraining.store.Personnel'
     ],
 
-    title: 'Personnel',
-
     store: {
         type: 'personnel'
     },

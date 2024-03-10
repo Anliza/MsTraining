@@ -26,7 +26,6 @@ Ext.define('MsTraining.view.todos.TodoGrid',{
     columns: [
         { dataIndex: '_id', text: 'ID' },
         { dataIndex: 'title', text: 'Title',flex: 1},
-        { dataIndex: 'userId', text: 'User ID'},
         { dataIndex: 'completed', text: 'Completed'}
     ],
     selModel: {
@@ -38,5 +37,5 @@ Ext.define('MsTraining.view.todos.TodoGrid',{
         displayInfo: true
     },
     scrollable: true,
-    height: 600
+    height: 300
 })

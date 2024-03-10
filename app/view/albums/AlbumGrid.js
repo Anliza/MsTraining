@@ -26,7 +26,7 @@ Ext.define('MsTraining.view.albums.AlbumGrid',{
     columns: [
         { dataIndex: '_id', text: 'ID' },
         { dataIndex: 'title', text: 'Title',flex: 1},
-        { dataIndex: 'userId', text: 'User ID', sortable: false, hidden: true}
+        { dataIndex: 'userId', text: 'User ID', sortable: false, hidden: false}
     ],
     selModel: {
         selType: 'checkboxmodel',
@@ -37,5 +37,5 @@ Ext.define('MsTraining.view.albums.AlbumGrid',{
         displayInfo: true
     },
     scrollable: true,
-    height: 600
+    height: 300
 })

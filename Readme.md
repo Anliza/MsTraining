@@ -104,3 +104,6 @@ className => <AppName>.<foldername>.<ClassAndFileName>
 
 getting a specific id of data, use the command below;
 comments.getData().items[0].data
+
+### MongoDb configuration
+This entails using a local server for json placeholder. Use mock folder to set up MongoDb. npm needs to be installed in order to run mongo.

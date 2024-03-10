@@ -82,26 +82,27 @@ Ext.define('MsTraining.view.main.Main', {
             xtype: 'mainlist'
         }]
     }, {
-        title: 'Posts',
+        title: 'Static Data Management',
         iconCls: 'fa-user',
         items:[
             {
-                xtype: 'postgrid'
+                xtype: 'parentpanel'
             }
         ]
     }, {
-        title: 'Albums',
+        title: 'Posts',
         iconCls: 'fa-users',
         items:[{
-            xtype: 'albumgrid'
+            // xtype: 'postgrid'
         }   
         ]
     }, {
-        title: 'Todos',
+        title: 'Settings',
         iconCls: 'fa-cog',
         items:[{
-            xtype: 'todogrid'
+            
         }
         ]
     }]
 });
+
