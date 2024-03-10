@@ -1,11 +1,15 @@
-Ext.define('MsTraining.view.Posts.PostGrid',{
+Ext.define('MsTraining.view.posts.PostGrid',{
     extend: 'Ext.grid.Panel',
     xtype: 'postgrid',
+    controller: 'postgridviewcontroller',
     store:{
         type: 'posts'
     },
     tbar:[{
-        text: 'Add Post'
+        text: 'Add Post',
+        listeners:{
+            click: 'onAddPostClicked'
+        }
     }],
     columns: [
         { dataIndex: '_id', text: 'ID' },
@@ -22,5 +26,5 @@ Ext.define('MsTraining.view.Posts.PostGrid',{
         displayInfo: true
     },
     scrollable: true,
-    height: 800
+    height: 400
 })
