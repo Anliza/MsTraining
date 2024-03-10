@@ -18,9 +18,9 @@ Ext.define('MsTraining.view.posts.PostGrid',{
         }
     },
     {
-        text: 'Layouts',
+        text: 'Checkout',
         listeners: {
-            click: 'onLayoutsClicked'
+            click: 'onCheckoutClicked'
         }
     }],
     columns: [

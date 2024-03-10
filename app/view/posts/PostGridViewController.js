@@ -15,9 +15,9 @@ Ext.define('MsTraining.view.posts.PostGridViewController',{
             xtype: "formfieldsdemo",
         });
     }, 
-onLayoutsClicked:function(btn,e,eOpts){
+onCheckoutClicked:function(btn,e,eOpts){
   Ext.create({
-      xtype: "borderlayout",
+      xtype: "checkoutform", 
     });
 },
 })

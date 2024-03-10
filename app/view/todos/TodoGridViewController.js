@@ -17,7 +17,7 @@ Ext.define('MyApp.view.todos.TodoGridViewController',{
     }, 
     onLayoutsClicked:function(btn,e,eOpts){
       Ext.create({
-          xtype: "accordionlayout",
+          xtype: "accordionlayout", // or "borderlayout",
         });
     }
 })

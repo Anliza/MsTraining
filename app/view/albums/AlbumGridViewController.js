@@ -17,7 +17,7 @@ Ext.define('MsTraining.view.posts.AlbumGridViewController',{
     }, 
     onLayoutsClicked:function(btn,e,eOpts){
       Ext.create({
-          xtype: "columnlayout", //"hboxvboxlayout",
+          xtype: "columnlayout", // or "hboxvboxlayout",
         });
     }
 })
