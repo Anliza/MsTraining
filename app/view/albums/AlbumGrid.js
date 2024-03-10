@@ -1,17 +1,13 @@
-Ext.define('MsTraining.view.Posts.PostGrid',{
+Ext.define('MsTraining.view.Posts.AlbumGrid',{
     extend: 'Ext.grid.Panel',
-    xtype: 'postgrid',
+    xtype: 'albumgrid',
     store:{
-        type: 'posts'
+        type: 'albums'
     },
-    tbar:[{
-        text: 'Add Post'
-    }],
     columns: [
         { dataIndex: '_id', text: 'ID' },
         { dataIndex: 'title', text: 'Title',flex: 1},
-        { dataIndex: 'body', text: 'Body', flex: 2, sortable: false},
-        { dataIndex: 'userId', text: 'User ID', sortable: false, hidden: true}
+        { dataIndex: 'userId', text: 'User ID'}
     ],
     selModel: {
         selType: 'checkboxmodel',

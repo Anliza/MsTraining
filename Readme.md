@@ -101,3 +101,6 @@ It is good practice to make the folder name similar to the file name
 The command creates the initial application. Connect the folder to git repo.
 
 className => <AppName>.<foldername>.<ClassAndFileName>
+
+getting a specific id of data, use the command below;
+comments.getData().items[0].data
