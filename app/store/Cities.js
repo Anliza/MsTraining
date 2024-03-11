@@ -1,7 +1,7 @@
 Ext.define("MsTraining.store.Cities", {
     extend: 'Ext.data.Store',
     alias: 'store.cities',
-    model:'MyApp.model.City',
+    model:'MsTraining.model.City',
     fields: ['cityId', 'city', 'stateId'], // Assuming you have a field to store the state ID
     data: {
         'AL': [

@@ -2,7 +2,7 @@ Ext.define('MsTraining.view.albums.AlbumGrid',{
     extend: 'Ext.grid.Panel',
     xtype: 'albumgrid',
     controller: 'albumgridviewcontroller',
-    title: 'Albums',
+    //title: 'Albums',
     store:{
         type: 'albums'
     },

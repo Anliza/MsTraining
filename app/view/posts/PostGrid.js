@@ -3,7 +3,7 @@ Ext.define('MsTraining.view.posts.PostGrid',{
     xtype: 'postgrid',
     reference: 'postgrid',
     controller: 'postgridviewcontroller',
-    title: 'Posts',
+    //title: 'Posts',
     store:{
         type: 'posts'
     },

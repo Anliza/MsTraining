@@ -2,7 +2,7 @@ Ext.define('MsTraining.view.todos.TodoGrid',{
     extend: 'Ext.grid.Panel',
     xtype: 'todogrid',
     controller: 'todogridcontroller',
-    title: 'Todos',
+    //title: 'Todos',
     store:{
         type: 'todos'
     },
