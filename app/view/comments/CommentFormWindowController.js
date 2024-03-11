@@ -1,6 +1,6 @@
-Ext.define('MsTraining.view.todos.TodoFormController', {
+Ext.define('MsTraining.view.comments.CommentFormController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.todoformcontroller',
+    alias: 'controller.commentformcontroller',
     init: function () {
 
     },
@@ -13,13 +13,13 @@ Ext.define('MsTraining.view.todos.TodoFormController', {
         console.log(window);
         let references = window.getReferences();
 
-        let form = references['todoform'].getForm();
+        let form = references['commentform'].getForm();
 
         if(form.isValid()){
             //send ajax request to submit
             form.submit({
                 method:'POST',
-                url:'http://localhost:3000/todos',
+                url:'http://localhost:3000/comments',
                 success:function(form,action){
                     Ext.Msg.alert('Success', action.result.msg);
                     // add the record tpo the post store -> post grid

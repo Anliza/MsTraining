@@ -332,7 +332,7 @@ Ext.define('MsTraining.view.layouts.CheckoutForm', {
                             forceSelection: true,
   
                             store: {
-                              type: "",
+                              type: 'months',
                             },
                           },
                           {
