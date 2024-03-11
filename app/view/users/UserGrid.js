@@ -32,13 +32,20 @@ Ext.define('MsTraining.view.users.UserGrid',{
         {
             text: 'Add User'
         },
+        {
+            text: 'Model Binding',
+            handler: 'onModelBinding'
+        },
         // '->',
         {
             xtype:'tbfill'
         },
         {
           text:'Show Details',
-          handler:'onShowDetails'  
+          handler:'onShowDetails',
+          bind: {
+            disabled: '{!usergrid.selection}'
+        }  
         }
     ],
     selModel: {
