@@ -90,17 +90,17 @@ Ext.define('MsTraining.view.main.Main', {
             }
         ]
     }, {
-        title: 'Posts',
+        title: 'Employees',
         iconCls: 'fa-users',
         items:[{
-            // xtype: 'postgrid'
+            xtype: 'employeegrid'
         }   
         ]
     }, {
-        title: 'Settings',
+        title: 'Test Results',
         iconCls: 'fa-cog',
         items:[{
-            
+            xtype: 'testresultgrid'
         }
         ]
     }]
