@@ -1,19 +1,13 @@
 /**
- * This class is the controller for the main view for the application. It is specified as
- * the "controller" of the Main view class.
+ * This class is the view model for the Main view of the application.
  */
-Ext.define('MsTraining.view.main.MainController', {
-    extend: 'Ext.app.ViewController',
+Ext.define('MsTraining.view.main.MainModel', {
+    extend: 'Ext.app.ViewModel',
 
-    alias: 'controller.main',
+    alias: 'viewmodel.main',
 
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
-    },
-
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
+    data: {
+        name: 'MsTraining',
+        footer: '&copy Mhusika '+new Date().getFullYear(),
     }
 });

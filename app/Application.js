@@ -3,29 +3,34 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
-Ext.define('MsTraining.Application', {
-    extend: 'Ext.app.Application',
-
-    name: 'MsTraining',
-
+Ext.define("MsTraining.Application", {
+    extend: "Ext.app.Application",
+  
+    name: "MsTraining",
+  
     quickTips: false,
     platformConfig: {
-        desktop: {
-            quickTips: true
-        }
+      desktop: {
+        quickTips: true,
+      },
     },
-
+  
     onAppUpdate: function () {
-        Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
-            function (choice) {
-                if (choice === 'yes') {
-                    window.location.reload();
-                }
-            }
-        );
+      Ext.Msg.confirm(
+        "Application Update",
+        "This application has an update, reload?",
+        function (choice) {
+          if (choice === "yes") {
+            window.location.reload();
+          }
+        }
+      );
+    },
+    launch:function(profile){
+      var loggedIn;
+      loggedIn = localStorage.getItem("MsAppLoggedIn");
+      console.log(loggedIn);
+      Ext.widget(loggedIn ? 'app-main' : 'login');
+      
     }
-},
-function () {
-    console.log("On th callback");
-  }
-);
+  });
