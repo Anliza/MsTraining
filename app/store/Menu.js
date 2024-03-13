@@ -12,34 +12,38 @@ Ext.define('MsTraining.store.Menu',{
                     {
                         text:'Users',
                         iconCls:'fa fa-users',
+                        className:'usergrid',
                         leaf:true
                     },
                     {
-                        text: 'Permission',
+                        text: 'Todos',
                         iconCls: 'fas fa-user-secret',
+                        className: 'todogrid',
                         leaf: true
                     }
                 ]
-
+              
             },
             {
                 text: 'Static Data',
                 iconCls:'fa fa-database fa-lg',
                 children: [
                     {
-                        text: 'Users',
+                        text: 'Posts',
                         iconCls: 'fa fa-users',
+                        className: 'postgrid',
                         leaf: true
                     },
                     {
-                        text: 'Permission',
+                        text: 'Personnel',
                         iconCls: 'fa fa-users',
-                        leaf: true
+                        leaf:true,
+                        className: 'mainlist',
                     }
                 ]
 
             },
-
+            
         ]
     }
 })

@@ -35,7 +35,7 @@ Ext.define('MsTraining.view.users.UserGridController', {
             lowerPanel.setHeight(300)
             btn.setText("Hide Details")
         }else{
-            userGrid.setHeight(1200)
+            userGrid.setHeight(800)
             lowerPanel.setHeight(0)
             btn.setText("Show Details")
         }
