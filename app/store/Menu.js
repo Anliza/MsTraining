@@ -6,21 +6,22 @@ Ext.define('MsTraining.store.Menu',{
         expanded: true,
         children: [
             {
-                text: 'Security',
+                text: 'Summary',
                 iconCls:'fas fa-users-cog',
                 children:[
                     {
-                        text:'Users',
-                        iconCls:'fa fa-users',
-                        className:'usergrid',
-                        leaf:true
+                        text: 'Employee grouping',
+                        iconCls: 'fa fa-users',
+                        className: 'employeegrid',
+                        leaf: true
                     },
                     {
-                        text: 'Todos',
-                        iconCls: 'fas fa-user-secret',
-                        className: 'todogrid',
+                        text: 'Student Results ',
+                        iconCls: 'fa fa-users',
+                        className: 'testresultgrid',
                         leaf: true
                     }
+
                 ]
               
             },
@@ -34,11 +35,30 @@ Ext.define('MsTraining.store.Menu',{
                         className: 'postgrid',
                         leaf: true
                     },
+                    // {
+                    //     text: 'Personnel',
+                    //     iconCls: 'fa fa-users',
+                    //     leaf:true,
+                    //     className: 'mainlist',
+                    // }
+
                     {
-                        text: 'Personnel',
-                        iconCls: 'fa fa-users',
-                        leaf:true,
-                        className: 'mainlist',
+                        text:'Users',
+                        iconCls:'fa fa-users',
+                        className:'parentpanel',
+                        leaf:true
+                    },
+                    {
+                        text: 'Todos',
+                        iconCls: 'fas fa-user-secret',
+                        className: 'todogrid',
+                        leaf: true
+                    },
+                    {
+                        text: 'Albums',
+                        iconCls: 'fas fa-user-secret',
+                        className: 'albumgrid',
+                        leaf: true
                     }
                 ]
 

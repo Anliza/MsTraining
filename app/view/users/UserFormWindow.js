@@ -19,7 +19,7 @@ Ext.define('MsTraining.view.users.UserFormWindow',{
             {
                 allowBlank: true,
                 readOnly:true,
-                xtype: 'textfield',
+                xtype: 'textfield',// consider changing to combobox
                 reference: 'UserId',
                 fieldLabel: 'User ID',
                 name: '_id',

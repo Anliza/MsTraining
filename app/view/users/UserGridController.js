@@ -7,10 +7,21 @@ Ext.define('MsTraining.view.users.UserGridController', {
             store = grid.getStore();
         store.load();
     },
+
+    onAddUserClicked:function(btn,e,eOpts){
+        console.log(btn.getText() + " was clicked");
+        // Ext.create("MsTraining.view.demo.CustomWindow");
+        var wd = Ext.create({
+            xtype: "userformwindow",
+        });
+        wd.show();
+    }, 
+
     onUserGridCellClick: function (grid, td, cellIndex, record, tr, rowIndex, e, eOpts) {
         let postsStore = Ext.ComponentQuery.query('postgrid')[0].getStore();
         let todosStore = Ext.ComponentQuery.query('todogrid')[0].getStore();
         let albumsStore = Ext.ComponentQuery.query('albumgrid')[0].getStore();
+        
         postsStore.reload({
             params: {
                 userId: record.get('_id')
@@ -40,7 +51,7 @@ Ext.define('MsTraining.view.users.UserGridController', {
             btn.setText("Show Details")
         }
     },
-        onModelBinding:function(btn,e,eOpts){
+    onModelBinding:function(btn,e,eOpts){
             Ext.create({
                 xtype:'modelbindingform'
             })

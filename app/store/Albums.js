@@ -3,6 +3,6 @@ Ext.define('MsTraining.store.Albums',{
     alias: 'store.albums',
     model: 'MsTraining.model.Album',
     requires: ['MsTraining.model.Album'],
-    autoLoad: true,
+    // autoLoad: true,
     pageSize: 25,
 })

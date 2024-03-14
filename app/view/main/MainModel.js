@@ -8,6 +8,6 @@ Ext.define('MsTraining.view.main.MainModel', {
 
     data: {
         name: 'MsTraining',
-        footer: '&copy Mhusika '+new Date().getFullYear(),
+        footer: '&copy Annliza '+new Date().getFullYear(),
     }
 });

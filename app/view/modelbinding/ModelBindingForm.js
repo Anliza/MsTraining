@@ -2,7 +2,7 @@ Ext.define('MsTraining.view.modelbinding.ModelBindingForm', {
     extend: 'Ext.window.Window',
     xtype: 'modelbindingform',
     controller: 'modelbindingformcontroller',
-    height: 600,
+    height: 400,
     width: 520,
     autoShow: true,
     closable: true,
