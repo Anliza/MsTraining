@@ -31,6 +31,23 @@ Ext.define("MsTraining.Application", {
       loggedIn = localStorage.getItem("MsAppLoggedIn");
       console.log(loggedIn);
       Ext.widget(loggedIn ? 'app-main' : 'login');
+
+    },
+     //routing main 
+    defaultToken: 'home',
+    listen: {
+      global: {
+        unmatchedroute: 'onUnmatchedRoute'
+      }
+    },
+  
+    onUnmatchedRoute: function (token) {
+      Ext.Msg.show({
+        title: 'Failure',
+        msg: 'Unknown path: /' + token,
+        buttons: Ext.Msg.OK,
+        icon: Ext.Msg.ERROR
+      }); 
       
     }
   });

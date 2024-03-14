@@ -32,7 +32,7 @@ Ext.define('MsTraining.store.Menu',{
                     {
                         text: 'Posts',
                         iconCls: 'fa fa-users',
-                        className: 'postgrid',
+                        className: 'posts',
                         leaf: true
                     },
                     // {
@@ -45,7 +45,7 @@ Ext.define('MsTraining.store.Menu',{
                     {
                         text:'Users',
                         iconCls:'fa fa-users',
-                        className:'parentpanel',
+                        className:'users',
                         leaf:true
                     },
                     {
